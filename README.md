@@ -13,6 +13,9 @@ All images, text, and colours can be easily edited, full instructions can be fou
 - Settings button to toggle gta settings
 - Disconnect button to quickly leave server
 
+## Credits ##
+- AbstractBunny(redid code and fixed exploits)
+
 ## Install ##
 
 1) Customise HTML and CSS accordingly to fit your server, refer to instructions below if unsure.
