@@ -1,7 +1,18 @@
 //------------------------------\\
 //---\\ BOII | DEVELOPMENT //---\\
 //------------------------------\\
-
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        // Envoyer un message au Lua pour fermer le menu
+        fetch(`https://${GetParentResourceName()}/exit`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json; charset=UTF-8',
+            },
+            body: JSON.stringify({})
+        });
+    }
+});
 $(document).ready(function(){
     window.addEventListener('message', function(event) {
         var item = event.data;
